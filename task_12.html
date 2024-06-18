@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethnus Layout</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .custom-navbar {
+            background-color: #00bcd4;
+        }
+        .custom-sidebar {
+            background-color: #757575;
+            height: 100%;
+            padding-top: 10px;
+            color: white;
+            position: fixed;
+            right: 0;
+            top: 56px; /* height of navbar */
+            width: 200px;
+        }
+        .main-content {
+            margin-top: 20px;
+            margin-right: 220px; /* width of sidebar + some margin */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md custom-navbar">
+        <a class="navbar-brand text-white" href="#">Ethnus layout</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">MENU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">CONTACT</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">SIGNUP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">LOGIN</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="custom-sidebar">
+        <p>This is</p>
+    </div>
+
+    <!-- Main content -->
+    <div class="container main-content">
+        <p>Write your content here</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
